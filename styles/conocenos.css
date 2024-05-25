@@ -160,12 +160,15 @@ header .btn-menu{
 /*===ICONO CHAT RESPONSIVE   ===*/
 .section-conocenos .chat-responsive i{
     font-size: 3rem;
-    color: rgb(149, 149, 255);
+    color: #ffff;
     position: absolute;
     right: 3rem;
     bottom: 2rem;
     position: fixed;
     display: none;
+    background: rgb(149, 149, 255);
+    border-radius: 50px;
+    padding: .7rem;
 }
 
 
@@ -440,6 +443,7 @@ header .btn-menu{
 }
 
 
+
 @media (max-width: 951px){
     .work-us{
         width: 95%;
@@ -454,11 +458,22 @@ header .btn-menu{
     }
 }
 
+
+@media (max-width: 932px){
+    .section-conocenos .info-iconos{
+        display: none;
+    }
+    .section-conocenos .chat-responsive i{
+        display: block;
+        z-index: 3;
+    }
+}
+
 /*==========    MENU RESPONSIVE ========*/
     /*=============     =============*/
     @media (max-width: 759px){
         .work-us{
-            width: 85%;
+            width: 95%;
         }
         .work-us h2{
             font-size: 2rem;
@@ -477,6 +492,7 @@ header .btn-menu{
         }
         .cont-us .cont-figure-us-left h3{
             padding: 0px 3rem;
+            font-size: 1rem;
         }
         
         .cont-us .cont-figure-right{
@@ -492,7 +508,9 @@ header .btn-menu{
         .cont-us .cont-figure-right .figure-right h2{
             font-size: 3rem;
         }
-    
+        .work-us .cont-us .cont-figure-right h3{
+            font-size: 1rem;
+        }
     }
 
 
@@ -544,7 +562,7 @@ header .btn-menu{
         position: absolute;
         background: #210140;
         width: 100%;
-        height: 100vh;
+        height: 100%;
         top: 0;
         left: 0;
         transition: all 500ms ease;
@@ -559,7 +577,7 @@ header .btn-menu{
     .cont-menu{
         width: 100%;
         background: #210140;
-        height: 100vh;
+        height: 100%;
         position: relative;
         transition: all 500ms ease;
         transform: translateX(-100%);
@@ -571,6 +589,7 @@ header .btn-menu{
         transform: translateY(15%);
     }
     .cont-menu nav a{
+        font-size: 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -590,13 +609,7 @@ header .btn-menu{
         font-size: 1.7rem;
     }
     
-    .section-conocenos .info-iconos{
-        display: none;
-    }
-    .section-conocenos .chat-responsive i{
-        display: block;
-        z-index: 3;
-    }
+    
 }
 
 
@@ -645,12 +658,21 @@ header .btn-menu{
 
 @media (max-width: 525px){
     .container .container-img-us{
+        text-align: center;
         width: 100%;
-        height: 175px;
+        height: 130px;
+    }
+    .container .container-img-us img{
+        width: 75%;
+        height: 100px;
     }
     .section-conocenos{
         padding-top: 6rem;
     }
+    .section-conocenos .container .info-conocenos p{
+        font-size: 1rem;
+    }
+    /**/
     .section-conocenos .container{
         width: 94%;
     }
@@ -661,6 +683,12 @@ header .btn-menu{
         width: 100%;
         height: 170px;
     }
+    .work-us{
+        width: 100%;
+        padding: 1rem;
+    }
+    
+
     .work-us .cont-us .cont-figure-us-left h3{
         font-size: .9rem;
         text-align: right;
