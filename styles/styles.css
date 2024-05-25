@@ -108,6 +108,10 @@ header .btn-menu{
     height: 500px;
 }
 
+/*==    elementos responsive===*/
+.section-banner .titulos-responsive{
+    display: none;
+}
 
 /*iconos flotantes*/
 .section-banner .info-iconos{
@@ -363,7 +367,6 @@ button{
     align-items: center;
     margin-bottom: 1rem;
     color: white;
-    
 }
 .container-services-responsive .card-services-responsive img{
     width: 100%;
@@ -628,6 +631,7 @@ button{
         transform: translateY(15%);
     }
     .cont-menu nav a{
+        font-size: 1.5rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -710,8 +714,33 @@ button{
        grid-template-columns: repeat(1, 1fr);
     }
     .section-banner .titulos{
-        padding-bottom: 1.5rem;
+        display: none;
     }
+    /**/
+    .section-banner .titulos-responsive{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .info .titulos-responsive .cont-titulos h2,
+    .info .titulos-responsive .cont-titulos2 h2{
+        font-size: 1.2rem;
+        color: #f3f3f3;
+        font-weight: 300;
+    }
+    .info .titulos-responsive .cont-titulos h3,
+    .info .titulos-responsive .cont-titulos2 h3{
+        color: #fb8710;
+    }
+    .info .titulos-responsive .cont-titulos{
+        border-right: 1px solid #f3f3f3;
+        padding-right: 1.3rem;
+    }
+    .info .titulos-responsive .cont-titulos2{
+        padding-left: 1.3rem;
+    }
+    
+
     .section-banner .info h2{
         font-size: 1.6rem;
         color: white;
@@ -736,9 +765,13 @@ button{
     }
     .section-banner .container-img img{
         width: 100%;
-        height: 450px;
+        height: 350px;
     }
 
     /*==========    =========*/
+    .container-services-responsive .card-services-responsive img{
+        width: 100%;
+        height: 235px;
+    }
 
 }
