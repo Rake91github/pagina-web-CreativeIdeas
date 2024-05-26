@@ -27,6 +27,31 @@ header{
     width: 100%;
     height: 100%;
 }
+
+
+/**/
+.navbar{
+    transition: all .5s;
+}
+.navbar.hide{
+    transform: translateY(-100%);
+    transition: all .5s;
+}
+/**/
+
+/**/
+.show{
+    transform: scale(0.8);
+    opacity: 0;
+    transition: all 1.2 ease-out;
+}
+.mostrar{
+    transform: scale(1);
+    opacity: 1;
+}
+
+/**/
+
 nav a{
     color: white;
     padding: 0px 1rem;
@@ -103,6 +128,9 @@ header .btn-menu{
     font-size: 3rem;
     font-weight: 900;
 }
+/**/
+
+/**/
 .section-banner .container-img img{
     width: 100%;
     height: 500px;
@@ -168,13 +196,14 @@ header .btn-menu{
     font-size: 3rem;
     color: #ffff;
     position: absolute;
-    right: 3rem;
+    right: 1rem;
     bottom: 2rem;
     position: fixed;
     display: none;
     background: rgb(149, 149, 255);
     border-radius: 50px;
     padding: .7rem;
+    z-index: 3;
 }
 /*===*/
 
@@ -625,6 +654,7 @@ button{
         opacity: 0;
         visibility: hidden;
         z-index: 4;
+        position: fixed;
     }
     #btn-menu:checked ~ .container-menu{
         opacity: 1;
