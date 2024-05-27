@@ -20,3 +20,8 @@ function scrollUp(){
          zero = $(window).scrollTop();
      })
  })
+
+
+
+
+ 

@@ -32,10 +32,10 @@ header{
 }
 
 /**/
-.navbar{
+.header{
     transition: all .5s;
 }
-.navbar.hide{
+.header.hide{
     transform: translateY(-100%);
     transition: all .5s;
 }
@@ -89,7 +89,7 @@ header .btn-menu{
 /*==============    BLOG SECTION INICIO    ==============*/
 .section-info-blog{
     width: 100%;
-    padding: 12rem 5px 2rem 5px;
+    padding: 11rem 5px 2rem 5px;
 }
 .section-info-blog .container{
     display: grid;
@@ -187,6 +187,11 @@ header .btn-menu{
 
 .card-blog .box .figure-icon span{
     padding: 0px 7px;
+}
+
+/*javascript*/
+.card-blog .box .figure-icon .like-icon.active{
+    color: #fb8710;
 }
 
 
@@ -320,6 +325,7 @@ header .btn-menu{
         opacity: 0;
         visibility: hidden;
         z-index: 4;
+        position: fixed;
     }
     #btn-menu:checked ~ .container-menu{
         opacity: 1;
